@@ -55,7 +55,7 @@
 ## 📁 Arquitectura del Sistema
 
 
-julianpinto15-ventas/
+-ventas/
 ├── 🏗 config/              # Configuración del sistema
 ├── 📊 DB/                 # Base de datos y scripts SQL
 ├── 📱 app/
@@ -191,16 +191,6 @@ julianpinto15-ventas/
 | 🏢 *Empresa* | Configuración y branding | ✅ |
 | 🔐 *Seguridad* | Autenticación y permisos | ✅ |
 
-## 🤝 Contribuir al Proyecto
-
-¡Las contribuciones son bienvenidas! Sigue estos pasos:
-
-1. *🍴 Fork* del proyecto
-2. *🌿 Crear rama* (git checkout -b feature/nueva-funcionalidad)
-3. *💻 Commit* cambios (git commit -m 'Agregar nueva funcionalidad')
-4. *📤 Push* a la rama (git push origin feature/nueva-funcionalidad)
-5. *🔀 Pull Request* para revisión
-
 
 ## 🎉 Próximas Características
 
@@ -237,7 +227,7 @@ Este proyecto está bajo la *Licencia MIT* - ver [LICENSE](LICENSE) para más de
 
 Si este sistema te ha sido útil, ¡considera darle una ⭐ en GitHub!
 
-*[⭐ Star en GitHub](https://github.com/julianpinto15/sistema-ventas-php)* | *[🔄 Fork](https://github.com/julianpinto15/sistema-ventas-php/fork)* | *[📥 Descargar](https://github.com/julianpinto15/sistema-ventas-php/archive/main.zip)*
+*[⭐ Star en GitHub](https://github.com/BARBOSA191919)*
 
 </div>
 
