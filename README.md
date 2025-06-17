@@ -55,8 +55,10 @@
 ## 📁 Arquitectura del Sistema
 
 
-- ventas/
-│
+📁 **Arquitectura del Sistema**
+
+```text
+ventas/
 ├── 🏗 config/              # Configuración del sistema
 ├── 📊 DB/                  # Base de datos y scripts SQL
 ├── 📱 app/
@@ -70,8 +72,8 @@
 │       ├── 📸 fotos/       # Imágenes de usuarios
 │       ├── 🛍 productos/   # Imágenes de productos
 │       └── ⚡ js/           # Scripts JavaScript
-│
 └── 📚 Documentación completa en el README
+
 
 
 ## ⚡ Funcionalidades Destacadas
