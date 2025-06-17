@@ -54,9 +54,6 @@
 
 ## 📁 Arquitectura del Sistema
 
-
-📁 **Arquitectura del Sistema**
-
 ```text
 ventas/
 ├── 🏗 config/              # Configuración del sistema
@@ -73,7 +70,7 @@ ventas/
 │       ├── 🛍 productos/   # Imágenes de productos
 │       └── ⚡ js/           # Scripts JavaScript
 └── 📚 Documentación completa en el README
-
+```
 
 
 ## ⚡ Funcionalidades Destacadas
