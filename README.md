@@ -55,21 +55,23 @@
 ## 📁 Arquitectura del Sistema
 
 
--ventas/
+- ventas/
+│
 ├── 🏗 config/              # Configuración del sistema
 ├── 📊 DB/                  # Base de datos y scripts SQL
 ├── 📱 app/
-│   ├── 🔄 ajax/           # Comunicación asíncrona
-│   ├── 🎯 controllers/    # Lógica de control MVC
-│   ├── 🗃 models/         # Modelos de datos
-│   ├── 📄 pdf/            # Generación de documentos
-│   └── 🎨 views/          # Interfaz de usuario
-│       ├── 📋 content/    # Páginas principales
-│       ├── 💅 css/        # Estilos personalizados
-│       ├── 📸 fotos/      # Imágenes de usuarios
-│       ├── 🛍 productos/  # Imágenes de productos
-│       └── ⚡ js/         # Scripts JavaScript
-└── 📚 Documentación completa
+│   ├── 🔄 ajax/            # Comunicación asíncrona
+│   ├── 🎯 controllers/     # Lógica de control MVC
+│   ├── 🗃 models/          # Modelos de datos
+│   ├── 📄 pdf/             # Generación de documentos
+│   └── 🎨 views/           # Interfaz de usuario
+│       ├── 📋 content/     # Páginas principales
+│       ├── 💅 css/         # Estilos personalizados
+│       ├── 📸 fotos/       # Imágenes de usuarios
+│       ├── 🛍 productos/   # Imágenes de productos
+│       └── ⚡ js/           # Scripts JavaScript
+│
+└── 📚 Documentación completa en el README
 
 
 ## ⚡ Funcionalidades Destacadas
