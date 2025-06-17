@@ -57,17 +57,17 @@
 
 julianpinto15-ventas/
 ├── 🏗 config/              # Configuración del sistema
-├── 📊 DB/                  # Base de datos y scripts SQL
+├── 📊 DB/                 # Base de datos y scripts SQL
 ├── 📱 app/
 │   ├── 🔄 ajax/           # Comunicación asíncrona
 │   ├── 🎯 controllers/    # Lógica de control MVC
-│   ├── 🗃 models/         # Modelos de datos
+│   ├── 🗃 models/          # Modelos de datos
 │   ├── 📄 pdf/            # Generación de documentos
 │   └── 🎨 views/          # Interfaz de usuario
 │       ├── 📋 content/    # Páginas principales
 │       ├── 💅 css/        # Estilos personalizados
 │       ├── 📸 fotos/      # Imágenes de usuarios
-│       ├── 🛍 productos/  # Imágenes de productos
+│       ├── 🛍 productos/   # Imágenes de productos
 │       └── ⚡ js/         # Scripts JavaScript
 └── 📚 Documentación completa
 
@@ -201,13 +201,6 @@ julianpinto15-ventas/
 4. *📤 Push* a la rama (git push origin feature/nueva-funcionalidad)
 5. *🔀 Pull Request* para revisión
 
-## 📞 Soporte y Comunidad
-
-### 🆘 *¿Necesitas ayuda?*
-- 📧 *Email:* soporte@sistema-ventas.com
-- 💬 *Discord:* [Unirse al servidor](https://discord.gg/ventas-php)
-- 🐛 *Reportar bugs:* [Issues en GitHub](https://github.com/julianpinto15/sistema-ventas-php/issues)
-- 📚 *Documentación:* [Wiki completa](https://github.com/julianpinto15/sistema-ventas-php/wiki)
 
 ## 🎉 Próximas Características
 
@@ -222,19 +215,20 @@ julianpinto15-ventas/
 
 Este proyecto está bajo la *Licencia MIT* - ver [LICENSE](LICENSE) para más detalles.
 
-## 🌟 Agradecimientos
-
-- *Comunidad PHP* por su apoyo constante
-- *Contribuidores* que han mejorado el sistema
-- *Beta testers* por sus valiosos feedback
 
 ## 👨‍💻 Desarrollador
 
 *Julián Pinto* - Desarrollador Full Stack
 - 🌐 *GitHub:* [@julianpinto15](https://github.com/julianpinto15)
-- 💼 *LinkedIn:* [Julián Pinto](https://linkedin.com/in/julianpinto15)
-- 📧 *Email:* julian.pinto.dev@gmail.com
+- 💼 *LinkedIn:* [Julián Pinto](www.linkedin.com/in/julian-pinto15)
+- 📧 *Email:* julianpinto700@gmail.com
 
+## 👨‍💻 Desarrollador
+
+*Santiago Barbosa * - Desarrollador Full Stack
+- 🌐 *GitHub:* [@BARBOSA191919](https://github.com/BARBOSA191919)
+- 💼 *LinkedIn:* [Santiago Barbosa](https://www.linkedin.com/in/santiago-barbosa-903641209/)
+- 📧 *Email:* sbarbosarivas@gmail.com
 ---
 
 <div align="center">
