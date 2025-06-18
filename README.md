@@ -57,7 +57,7 @@
 
 ## 📁 Arquitectura del Sistema
 
-
+```
 julianpinto15-software-prestamos/
 ├── 📄 README.md                    # Documentación principal
 └── 💰 mini-control-empleados/      # Aplicación principal
@@ -117,6 +117,7 @@ julianpinto15-software-prestamos/
         └── 🔧 wrapper/
             └── ⚙ maven-wrapper.properties
 
+```
 
 ## ⚡ Funcionalidades Destacadas
 
@@ -150,12 +151,14 @@ julianpinto15-software-prestamos/
 ### Pasos de Instalación
 
 1. *📥 Clonar el repositorio*
+   ```
    bash
    git clone https://github.com/Julianpinto15/SoftwarePrestamosP..git
    cd SoftwarePrestamosP/mini-control-empleados
-   
+   ```
 
 2. *⚙ Configurar base de datos*
+   ```
    properties
    # Editar src/main/resources/application.properties
    
@@ -167,9 +170,10 @@ julianpinto15-software-prestamos/
    spring.datasource.url=jdbc:mysql://localhost:3306/prestamistas
    spring.datasource.username=tu_usuario
    spring.datasource.password=tu_password
-   
+   ```
 
 3. *🏗 Compilar y ejecutar*
+   ```
    bash
    # Compilar proyecto
    ./mvnw clean compile
@@ -180,12 +184,14 @@ julianpinto15-software-prestamos/
    # O usar Maven instalado
    mvn spring-boot:run
    
-
+    ```
 4. *🌐 Acceder a la aplicación*
+```
    - *URL:* http://localhost:8080
    - *Usuario:* admin
    - *Contraseña:* admin
    - *H2 Console:* http://localhost:8080/h2-console
+```
 
 ## 🎯 Casos de Uso Perfectos
 
@@ -261,6 +267,7 @@ julianpinto15-software-prestamos/
 ## 🏗 Arquitectura Técnica
 
 ### *Patrón MVC Implementado*
+```
 
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   📱 Vista      │────│  🎮 Controlador │────│  🏗 Modelo      │
@@ -276,7 +283,7 @@ julianpinto15-software-prestamos/
                         │  🗄 Repositorio │
                         │  (Data Access)  │
                         └─────────────────┘
-
+```
 
 ## 📄 Licencia
 
