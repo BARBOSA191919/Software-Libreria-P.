@@ -1,308 +1,273 @@
-# 💰 Sistema de Gestión de Préstamos - Spring Boot
+# 🛍 Sistema de Ventas PHP - Gestión Comercial Completa
 
-> Sistema completo de gestión de préstamos empresariales desarrollado en *Spring Boot* con arquitectura MVC para instituciones financieras y empresas de microcréditos.
+> Sistema de gestión de ventas moderno y eficiente desarrollado en *PHP nativo* con arquitectura MVC para pequeñas y medianas empresas.
 
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0+-brightgreen.svg)](https://spring.io/projects/spring-boot)
-[![Java](https://img.shields.io/badge/Java-17+-blue.svg)](https://www.oracle.com/java/)
-[![Maven](https://img.shields.io/badge/Maven-3.8+-red.svg)](https://maven.apache.org/)
-[![Thymeleaf](https://img.shields.io/badge/Thymeleaf-3.0+-green.svg)](https://www.thymeleaf.org/)
+[![PHP](https://img.shields.io/badge/PHP-8.0+-blue.svg)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-5.7+-orange.svg)](https://www.mysql.com/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![AJAX](https://img.shields.io/badge/AJAX-XMLHttpRequest-green.svg)](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX)
 [![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
 
 ## 🌟 Características Principales
 
-### 💼 *Gestión Integral de Préstamos*
-- *Control de préstamos* con seguimiento completo
-- *Gestión de pagos* con recordatorios automáticos
-- *Reportes financieros* detallados y exportables
+### 💼 *Gestión Integral de Ventas*
+- *Punto de Venta (POS)* intuitivo y rápido
+- *Facturación electrónica* con códigos de barras
+- *Control de inventario* en tiempo real
+- *Reportes de ventas* detallados y personalizables
 
 ### 👥 *Administración de Usuarios*
-- *Sistema de autenticación* con Spring Security
-- *Control de accesos* por roles y permisos
-- *Gestión de empleados* con perfiles completos
-
+- *Sistema de roles* (Admin, Cajero, Vendedor)
+- *Autenticación segura* con sesiones
+- *Gestión de perfiles* con fotografías
+- *Control de accesos* por módulos
 
 ### 📊 *Módulos Especializados*
-- *Control de Caja* con movimientos diarios
-- *Gestión de Clientes* con informacion detallada
-- *Exportación de datos* a Excel y PDF
+- *Gestión de Productos* con categorías y subcategorías
+- *Control de Clientes* con historial de compras
+- *Gestión de Proveedores* (Editoriales/Autores)
+- *Reportes Financieros* con gráficos interactivos
 
 ### 🎨 *Interfaz Moderna*
-- *Diseño responsive* con Bootstrap
-- *Dashboard ejecutivo* con métricas clave
-- *Navegación intuitiva* y accesible
-- *Notificaciones* en tiempo real
+- *Diseño responsive* para todos los dispositivos
+- *Dashboard interactivo* con métricas en tiempo real
+- *Navegación intuitiva* con sidebar dinámico
+- *Alertas y notificaciones* en tiempo real
 
 ## 🚀 Tecnologías Utilizadas
 
 ### *Backend*
-- *Spring Boot 3.0+* - Framework principal
-- *Spring Security* - Autenticación y autorización
-- *Spring Data JPA* - Persistencia de datos
-- *Maven* - Gestión de dependencias
+- *PHP 8.0+* - Lenguaje principal
+- *MySQL* - Base de datos relacional
+- *Arquitectura MVC* - Separación de responsabilidades
 
 ### *Frontend*
-- *Thymeleaf* - Motor de plantillas
-- *Bootstrap 5* - Framework CSS
+- *HTML5 & CSS3* - Estructura y estilos modernos
 - *JavaScript ES6+* - Interactividad del cliente
-
-### *Base de Datos*
-- *H2 Database* - Base de datos en memoria (desarrollo)
-- *MySQL/PostgreSQL* - Producción
-- *JPA/Hibernate* - ORM
+- *AJAX* - Comunicación asíncrona
+- *FontAwesome* - Iconografía profesional
 
 ### *Librerías Integradas*
-- *Apache POI* - Exportación a Excel
-- *iText PDF* - Generación de reportes PDF
-- *Spring Boot DevTools* - Desarrollo ágil
+- *FPDF* - Generación de reportes PDF
+- *Code128* - Códigos de barras
+- *Responsive Design* - Adaptable a cualquier pantalla
 
 ## 📁 Arquitectura del Sistema
 
 ```
-julianpinto15-software-prestamos/
-├── 📄 README.md                    # Documentación principal
-└── 💰 mini-control-empleados/      # Aplicación principal
-    ├── 🔧 mvnw                     # Maven wrapper (Unix)
-    ├── 🔧 mvnw.cmd                 # Maven wrapper (Windows)
-    ├── 📋 pom.xml                  # Configuración Maven
-    ├── 🚫 .gitignore               # Archivos ignorados por Git
-    ├── 📂 src/
-    │   ├── 🎯 main/
-    │   │   ├── ☕ java/
-    │   │   │   └── 📦 com/gestion/prestamos/
-    │   │   │       ├── 🚀 MiniControlEmpleadosApplication.java
-    │   │   │       ├── ⚙ MvcConfig.java
-    │   │   │       ├── 🔐 PasswordGenerator.java
-    │   │   │       ├── 🛡 WebSecurityConfig.java
-    │   │   │       ├── 🎮 controlador/
-    │   │   │       │   ├── 💰 CajaController.java
-    │   │   │       │   └── 📊 PrestamoController.java
-    │   │   │       ├── 🏗 entidades/
-    │   │   │       │   ├── 💵 Caja.java
-    │   │   │       │   ├── 💳 Prestamo.java
-    │   │   │       │   └── 👤 Usuario.java
-    │   │   │       ├── 🗄 repositorios/
-    │   │   │       │   ├── 💰 CajaRepository.java
-    │   │   │       │   ├── 📊 PrestamoRepository.java
-    │   │   │       │   └── 👥 UsuarioRepositorio.java
-    │   │   │       ├── 🔧 servicio/
-    │   │   │       │   ├── 💰 CajaService.java
-    │   │   │       │   ├── 📊 PrestamoService.java
-    │   │   │       │   └── 🔄 PrestamoServiceImpl.java
-    │   │   │       └── 🛠 util/
-    │   │   │           ├── 📄 paginacion/
-    │   │   │           │   ├── 📃 PageItem.java
-    │   │   │           │   └── 🔢 PageRender.java
-    │   │   │           └── 📈 reportes/
-    │   │   │               ├── 📊 PrestamoExporterExcel.java
-    │   │   │               └── 📋 PrestamoExporterPDF.java
-    │   │   └── 📁 resources/
-    │   │       ├── ⚙ application.properties
-    │   │       ├── 🌐 messages.properties
-    │   │       ├── 📂 META-INF/
-    │   │       │   └── 📋 MANIFEST.MF
-    │   │       └── 🎨 templates/
-    │   │           ├── 💰 agregarDinero.html
-    │   │           ├── ✏ editarCaja.html
-    │   │           ├── 📝 form.html
-    │   │           ├── 📊 listar.html
-    │   │           ├── 🔐 login.html
-    │   │           ├── 📄 paginator-nav.html
-    │   │           └── 🎭 layout/
-    │   │               └── 🏗 layout.html
-    │   └── 🧪 test/
-    │       └── ☕ java/
-    │           └── 📦 com/gestion/prestamos/
-    │               └── 🔬 MiniControlEmpleadosApplicationTests.java
-    └── 📂 .mvn/
-        └── 🔧 wrapper/
-            └── ⚙ maven-wrapper.properties
-
+-ventas/
+├── 🏗 config/              # Configuración del sistema
+├── 📊 DB/                  # Base de datos y scripts SQL
+├── 📱 app/
+│   ├── 🔄 ajax/           # Comunicación asíncrona
+│   ├── 🎯 controllers/    # Lógica de control MVC
+│   ├── 🗃 models/         # Modelos de datos
+│   ├── 📄 pdf/            # Generación de documentos
+│   └── 🎨 views/          # Interfaz de usuario
+│       ├── 📋 content/    # Páginas principales
+│       ├── 💅 css/        # Estilos personalizados
+│       ├── 📸 fotos/      # Imágenes de usuarios
+│       ├── 🛍 productos/  # Imágenes de productos
+│       └── ⚡ js/         # Scripts JavaScript
+└── 📚 Documentación completa
 ```
 
 ## ⚡ Funcionalidades Destacadas
 
-### 💰 *Sistema de Préstamos Avanzado*
-- ✅ *Solicitudes de préstamo* con evaluación automática
-- ✅ *Cálculo de intereses* configurables
-- ✅ *Cronograma de pagos* personalizable
-- ✅ *Seguimiento de mora* con alertas
+### 🛒 *Sistema de Ventas Avanzado*
+- ✅ *Búsqueda inteligente* de productos
+- ✅ *Cálculo automático* de totales e impuestos
+- ✅ *Múltiples métodos de pago*
+- ✅ *Impresión de tickets* y facturas
+- ✅ *Control de stock* automático
 
+### 📈 *Reportes y Analytics*
+- 📊 *Dashboard ejecutivo* con KPIs
+- 📋 *Reportes de inventario* detallados
+- 💰 *Análisis de ventas* por período
+- 📱 *Exportación a PDF* profesional
+- 🎯 *Métricas de rendimiento*
 
-### 📈 *Gestión de Caja y Finanzas*
-- 💵 *Control de efectivo* en tiempo real
-- 📊 *Movimientos diarios* detallados
-- 💰 *Balance general* automático
-- 📋 *Reportes de flujo de caja*
+### 🔐 *Seguridad Robusta*
+- 🛡 *Autenticación por sesiones*
+- 🔒 *Validación de datos* en frontend y backend
+- 👤 *Control de acceso* granular
+- 🚫 *Protección contra inyección SQL*
+- 🔄 *Sesiones seguras* con timeout
 
-### 🔐 *Seguridad Empresarial*
-- 🛡 *Spring Security* integrado
-- 🔒 *Autenticación robusta* con roles
-- 👤 *Control de sesiones* seguras
-- 🚫 *Protección CSRF* habilitada
-
-## 🛠 Instalación y Configuración
+## 🛠 Instalación Rápida
 
 ### Prerrequisitos
-- *Java 17+* con JDK completo
-- *Maven 3.8+* para gestión de dependencias
-- *IDE recomendado*: IntelliJ IDEA / Eclipse / VS Code
-- *Git* para control de versiones
+
+```
+- *PHP 8.0+* con extensiones MySQL
+- *Apache/Nginx* servidor web
+- *MySQL 5.7+* base de datos
+- *Navegador moderno* (Chrome, Firefox, Safari)
+```
 
 ### Pasos de Instalación
 
 1. *📥 Clonar el repositorio*
-   ```
-   bash
-   git clone https://github.com/Julianpinto15/SoftwarePrestamosP..git
-   cd SoftwarePrestamosP/mini-control-empleados
-   ```
-
-2. *⚙ Configurar base de datos*
-   ```
-   properties
-   # Editar src/main/resources/application.properties
-   
-   # Para desarrollo (H2)
-   spring.datasource.url=jdbc:h2:mem:prestamistas
-   spring.h2.console.enabled=true
-   
-   # Para producción (MySQL)
-   spring.datasource.url=jdbc:mysql://localhost:3306/prestamistas
-   spring.datasource.username=tu_usuario
-   spring.datasource.password=tu_password
-   ```
-
-3. *🏗 Compilar y ejecutar*
-   ```
-   bash
-   # Compilar proyecto
-   ./mvnw clean compile
-   
-   # Ejecutar aplicación
-   ./mvnw spring-boot:run
-   
-   # O usar Maven instalado
-   mvn spring-boot:run
-   
     ```
-4. *🌐 Acceder a la aplicación*
+    bash
+   git clone https://github.com/julianpinto15/sistema-ventas-php.git
+   cd sistema-ventas-php
+   ```
+
+3. *🗄 Configurar base de datos*
 ```
-   - *URL:* http://localhost:8080
+    sql
+   -- Crear base de datos
+   CREATE DATABASE ventas_db;
+   
+   -- Importar estructura
+   mysql -u root -p ventas_db < DB/ventas.sql
+ ```
+
+5. *⚙ Configurar conexión*
+ ```
+   php
+   // Editar config/server.php
+   define('DB_HOST', 'localhost');
+   define('DB_USER', 'tu_usuario');
+   define('DB_PASS', 'tu_password');
+   define('DB_NAME', 'ventas_db');
+  ``` 
+
+4. *🚀 Ejecutar aplicación*
+ ```
+   bash
+   # Iniciar servidor PHP
+   php -S localhost:8000
+   
+   # O configurar en Apache/Nginx
+   # Acceder a: http://localhost/sistema-ventas-php
+   ```
+
+5. *🔐 Credenciales por defecto*
+   ```
    - *Usuario:* admin
-   - *Contraseña:* admin
-   - *H2 Console:* http://localhost:8080/h2-console
-```
+   - *Contraseña:* admin123
+    ```
 
 ## 🎯 Casos de Uso Perfectos
 
-### 🏦 *Instituciones Financieras*
-- ✅ Microempresas de prestamos
+### 🏪 *Retail y Comercio*
+- ✅ Tiendas de ropa y accesorios
+- ✅ Librerías y papelerías
+- ✅ Ferreterías y suministros
+- ✅ Farmacias y droguerías
 
-### 💼 *Empresas de Servicios*
-- ✅ Préstamos a empleados
-- ✅ Financiamiento interno
+### 🍕 *Servicios y Restauración*
+- ✅ Restaurantes y cafeterías
+- ✅ Servicios profesionales
+- ✅ Centros de belleza
+- ✅ Talleres y reparaciones
 
 ## 📸 Capturas del Sistema
 
-### 🛡Login
-![Login](https://github.com/user-attachments/assets/2e0c95bb-054f-43f9-862c-be8537e68b14)
+### 🔐 Acceso y Autenticación
 
-### 🎛 Dashboard Ejecutivo
-![Dashboard](https://github.com/user-attachments/assets/49a2e311-dca3-431e-b841-48f3632ba452)
+-  🛡️ Pantalla de Login Principal
+  
+![Image](https://github.com/user-attachments/assets/bb45d01c-588a-465a-8e4b-1948f846947d)
 
-### 💰 Gestión de Préstamos
-![Prestamos](https://github.com/user-attachments/assets/22f7a507-7e25-4ac4-a2b5-ef6ca4d2db71)
+### 🏠 Panel de Control
 
-### 💰 Edicion de Préstamos
-![EdiccionPrestamo](https://github.com/user-attachments/assets/f39642a0-9074-4bb7-b58d-da1b4ca1d508)
+-   🎛️ Dashboard Ejecutivo 
+  
+![Image](https://github.com/user-attachments/assets/4f761ca3-cfc2-446f-8296-48929c2cafd8)
 
-### 📊 Informacion Prestamo
-![Iformacion](https://github.com/user-attachments/assets/dbfbbe0a-ef59-4303-87ee-df5607952264)
+### 💰 Sistema de Ventas
 
-### 📈 Registrar Abono
-![Abono](https://github.com/user-attachments/assets/e7973260-c37a-4b57-b90d-e441e6a5b5dd)
+-   📋 Detalle de Transacción
+  
+![Image](https://github.com/user-attachments/assets/35c5811f-d0dc-4028-8d36-76cf48465f39)
 
-### 📈 Agregar dinero
-![Agregar](https://github.com/user-attachments/assets/b417397a-3071-47bd-8bbf-e354e545a565)
+### 🛒 Terminal POS Móvil
+
+![Image](https://github.com/user-attachments/assets/cfa1cb35-db29-4311-b9e8-77af775374ba)
+
+### 📦 Gestión de Inventario
+
+-   📊 Control de Stock de Productos
+  
+![Image](https://github.com/user-attachments/assets/c03538cf-0d0c-415f-bb5b-1c7acfefed6e)
+
+### 👥 Administración de Datos
+
+-   🤝 Base de Datos de Clientes
+  
+![Image](https://github.com/user-attachments/assets/53247d4e-99b2-42f2-b228-1c4923544f55)
+
+### 🏷️ Sistema de Categorías
+
+![Image](https://github.com/user-attachments/assets/7028b4d5-d81f-40f0-a33b-73759c54e239)
+
+### 💰 Administración de Cajas
+
+![Image](https://github.com/user-attachments/assets/274a18eb-2df4-41a8-aa2f-28ea51d80009)
+
+### ⚙️ Configuración de Usuario
+
+-   📝 Registro de Nuevos Usuarios
+
+![Image](https://github.com/user-attachments/assets/af4b48e1-a62d-4bf2-9adc-d230415e6702)
+
+### 🔧 Panel de Configuración de Cuenta
+
+![Image](https://github.com/user-attachments/assets/d107bc95-31e8-4beb-9b1d-436c00da569b)
+
+## 🔄 Características AJAX
+
+### ⚡ *Funcionalidades Dinámicas*
+- 🔍 *Búsqueda en tiempo real* sin recargar página
+- 📝 *Actualización automática* de inventarios
+- 🛒 *Carrito de compras* dinámico
+- 📊 *Gráficos interactivos* en dashboard
+- 💾 *Guardado automático* de formularios
+
+## 📋 Módulos Incluidos
+
+| Módulo | Descripción | Estado |
+|--------|-------------|--------|
+| 👤 *Usuarios* | Gestión completa de usuarios y roles | ✅ |
+| 🛒 *Ventas* | Sistema POS con facturación | ✅ |
+| 📦 *Productos* | Inventario y categorización | ✅ |
+| 👥 *Clientes* | CRM básico integrado | ✅ |
+| 📊 *Reportes* | Analytics y reportes PDF | ✅ |
+| 🏢 *Empresa* | Configuración y branding | ✅ |
+| 🔐 *Seguridad* | Autenticación y permisos | ✅ |
 
 
-## 🔄 Características Spring Boot
+## 🎉 Próximas Características
 
-### ⚡ *Funcionalidades Modernas*
-- 🚀 *Auto-configuración* inteligente
-- 🔄 *Hot reload* con DevTools
-- 📊 *Actuators* para monitoreo
-- 🏗 *Inyección de dependencias* automática
-- 🔧 *Profiles* para diferentes entornos
-
-## 📋 Módulos del Sistema
-
-| Módulo | Descripción | Tecnología | Estado |
-|--------|-------------|------------|--------|
-| 🔐 *Autenticación* | Login y gestión de sesiones | Spring Security | ✅ |
-| 💰 *Préstamos* | Gestión completa de créditos | Spring Data JPA | ✅ |
-| 💵 *Caja* | Control de efectivo y movimientos | Thymeleaf + JPA | ✅ |
-| 👥 *Usuarios* | Administración de empleados | Spring Security | ✅ |
-| 📊 *Reportes* | Excel y PDF exportables | Apache POI + iText | ✅ |
-| 🎨 *Templates* | Interfaz responsive | Thymeleaf + Bootstrap | ✅ |
-| 🧪 *Testing* | Pruebas unitarias | JUnit 5 + Mockito | ✅ |
-
-## 🎉 Roadmap de Desarrollo
-
-### 🔮 *Próximas Características*
-- [ ] 📱 *API REST* para aplicaciones móviles
-- [ ] 🌐 *Multi-tenancy* para múltiples empresas
-- [ ] 💳 *Integración con pasarelas de pago*
-- [ ] 📊 *Dashboard BI* con análisis predictivo
-- [ ] 🔔 *Notificaciones push* automáticas
-- [ ] 🌍 *Internacionalización* completa
-
-### 🛠 *Mejoras Técnicas*
-- [ ] ⚗ *Migración a Spring Boot actualizado*
-- [ ] 🐳 *Dockerización* completa
-- [ ] ☁ *Despliegue en la nube* (AWS/Azure)
-- [ ] 📈 *Métricas avanzadas* con Micrometer
-- [ ] 🔍 *Logging estructurado* con Logback
-
-## 🏗 Arquitectura Técnica
-
-### *Patrón MVC Implementado*
-```
-
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   📱 Vista      │────│  🎮 Controlador │────│  🏗 Modelo      │
-│  (Thymeleaf)    │    │  (Controllers)  │    │  (Entidades)    │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                                │
-                        ┌─────────────────┐
-                        │  🔧 Servicios   │
-                        │  (Business)     │
-                        └─────────────────┘
-                                │
-                        ┌─────────────────┐
-                        │  🗄 Repositorio │
-                        │  (Data Access)  │
-                        └─────────────────┘
-```
+### 🔮 *Roadmap 2024*
+- [ ] 📱 *API REST* para integración móvil
+- [ ] 🌐 *Multi-idioma* (Español, Inglés)
+- [ ] 💳 *Pagos online* (PayPal, Stripe)
+- [ ] 📊 *Dashboard avanzado* con BI
+- [ ] 🔄 *Sincronización en la nube*
 
 ## 📄 Licencia
 
 Este proyecto está bajo la *Licencia MIT* - ver [LICENSE](LICENSE) para más detalles.
 
-## 👨‍💻 Desarrolladores
+## 👨‍💻 Desarrollador
 
-*Julián Pinto* - Software Developer
+*Julián Pinto* - Desarrollador Full Stack
 - 🌐 *GitHub:* [@julianpinto15](https://github.com/Julianpinto15)
 - 💼 *LinkedIn:* [Julián Pinto](https://www.linkedin.com/in/julian-pinto15/)
 - 📧 *Email:* julianpinto700@gmail.com
 
 ---
 
-*Santiago Barbosa* - Software Developer
-- 🌐 *GitHub:* [@BARBOSA191919](https://github.com/BARBOSA191919)
-- 💼 *LinkedIn:* [Santiago Barbosa](https://www.linkedin.com/in/santiago-barbosa-903641209/)
-- 📧 *Email:* sbarbosarivas@gmail.com
-
+*Santiago Barbosa * - Desarrollador Full Stack
+- 🌐 GitHub: [@BARBOSA191919](https://github.com/BARBOSA191919)
+- 💼 LinkedIn: [Santiago Barbosa](https://www.linkedin.com/in/santiago-barbosa-903641209/)
+- 📧 Email: sbarbosarivas@gmail.com
+  
 ---
 
 <div align="center">
@@ -311,13 +276,12 @@ Este proyecto está bajo la *Licencia MIT* - ver [LICENSE](LICENSE) para más de
 
 Si este sistema te ha sido útil, ¡considera darle una ⭐ en GitHub!
 
-*[⭐ Star en GitHub](https://github.com/Julianpinto15/SoftwarePrestamosP.)*
-
+*[⭐ Star en GitHub](https://github.com/BARBOSA191919/Software-Libreria-P.)* 
 </div>
 
 ---
 
 <div align="center">
-  <strong>Desarrollado con ❤ para instituciones financieras modernas</strong><br>
-  <em>Sistema de Gestión de Préstamos - Spring Boot Professional</em>
+  <strong>Desarrollado con ❤ para impulsar tu negocio</strong><br>
+  <em>Sistema de Ventas PHP - Gestión Comercial Profesional</em>
 </div>
